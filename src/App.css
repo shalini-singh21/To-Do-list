@@ -1,34 +1,34 @@
 .App {
-  height: 400px;
+  height: 700px;
   width: 40%;
-  background-color: rgb(176, 173, 173);
   padding: 20px;
   border-radius: 10px;
-  margin: 50px auto;  
   margin-left: 300px;
-
-  box-shadow: 0 0 20px grey;
+  /* background-image: url("C:\Users\shalini singh\to-do-list\src\images\list.png"); */
+  background-position: center;
+  background-size: cover;
+  background-color:  #AC94F4;
+ 
 }
 
 .header {
-  border-radius: 10px;
-  margin-left: 165px;
-  font-family: "Times New Roman", Times, serif;
+  font-style:italic;
+  margin-left: 130px;
+  font-size: large;
 }
 
 .input-container {
-  height: 250px;
-  width: 60%;
+  height: 600px;
+  width: 100%;
   border-radius: 10px;
-  margin-left: 100px;
+  /* margin-left: 80px;s */
   border-radius: 10px;
-  background-color: rgb(224, 216, 216);
-  margin-top: 10px;
-  box-shadow: 0 0 20px grey;
+  background-color: #C8A4D4;
+  margin-top: 20px;
+  /* box-shadow: 0 0 20px grey; */
 }
 .input-container:hover {
-  /* cursor: pointer; */
-  box-shadow: 0px 0px 100px grey;
+  box-shadow: 0px 0px 100px #C8A4D4;
 }
 
 .input {
@@ -46,7 +46,7 @@
 
 .input:hover {
   transition: all;
-  box-shadow: 0px 0px 100px grey;
+  box-shadow: 0px 0px 100px #643B9F;
 }
 
 .button {
@@ -54,10 +54,9 @@
   width: 70px;
   margin-left: 30px;
   margin-top: 10px;
-  background-color: #88ab33;
+  background-color: #643B9F;
   border-radius: 11px;
   font-size: bold;
-  box-shadow: 0 0 20px grey;
   font-variant: normal;
   color: white;
   border: none;
@@ -67,5 +66,33 @@
 
 .button:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 100px grey;
+  box-shadow: 0px 0px 100px #643B9F;
+}
+.tickImg {
+  height: 30px;
+  width: 50px;
+}
+
+.list-bar {
+  height: 30px;
+  width: 90%;
+  background-color: #e4d1d1;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0 0 20px grey;
+  text-rendering: auto;
+  margin-top: 10px;
+}
+
+.del-btn {
+  margin-left: auto;
+}
+.del-btn:hover{
+  /* background-color: r; */
+  box-shadow: 0 0 20px red;
+}
+
+.checkbox{
+  height: 20px;
 }
