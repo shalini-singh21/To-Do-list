@@ -1,9 +1,12 @@
 .App {
-  height: 700px;
-  width: 40%;
+  height: 500px;
+  width: 50%;
   padding: 20px;
   border-radius: 10px;
-  margin-left: 300px;
+  margin-left: 200px;
+  margin-right: 300px;
+  margin-top: 50px;
+  margin-bottom: 100px;
   /* background-image: url("C:\Users\shalini singh\to-do-list\src\images\list.png"); */
   background-position: center;
   background-size: cover;
@@ -13,12 +16,15 @@
 
 .header {
   font-style:italic;
-  margin-left: 130px;
+  margin-left: 200px;
   font-size: large;
+  text-shadow:red;
+  /* box-shadow: 0px 0px 20px  red; */
+  /* box-shadow: 20px red; */
 }
 
 .input-container {
-  height: 600px;
+  height: 400px;
   width: 100%;
   border-radius: 10px;
   /* margin-left: 80px;s */
@@ -74,7 +80,7 @@
 }
 
 .list-bar {
-  height: 30px;
+  height: 50px;
   width: 90%;
   background-color: #e4d1d1;
   border-radius: 5px;
@@ -85,14 +91,33 @@
   margin-top: 10px;
 }
 
+
 .del-btn {
-  margin-left: auto;
-}
-.del-btn:hover{
-  /* background-color: r; */
-  box-shadow: 0 0 20px red;
+  margin-left: 50px;
+  background-color: red;
+  border: none;
+  /* position: relative; */
+  /* color: red; */
 }
 
-.checkbox{
-  height: 20px;
+.clear-btn{
+  height: 40px;
+  width: 70px;
+  margin-left: 30px;
+  margin-top: 10px;
+  background-color: #643B9F;
+  border-radius: 11px;
+  font-size: bold;
+  font-variant: normal;
+  color: white;
+  border: none;
+  font-size: large;
+  font-weight: 200;
 }
+
+.fa-solid{
+  background-color: red;
+}
+
+
+
