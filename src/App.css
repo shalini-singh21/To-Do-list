@@ -1,5 +1,5 @@
 .App {
-  height: 500px;
+  height: 600px;
   width: 50%;
   padding: 20px;
   border-radius: 10px;
@@ -11,6 +11,8 @@
   background-position: center;
   background-size: cover;
   background-color:  #AC94F4;
+  /* background: linear-gradient(#181A2F, #242E49, #37415C, #FDA481,#B4182D,#53162B); */
+  /* background: linear-gradient(#0D1E4C , #C48CB3, #E5C9D7, #83A6CE,#26415E,#0B1B32); */
  
 }
 
@@ -19,28 +21,39 @@
   margin-left: 200px;
   font-size: large;
   text-shadow:red;
-  /* box-shadow: 0px 0px 20px  red; */
-  /* box-shadow: 20px red; */
+
 }
 
+.header1{
+  font-style: italic;
+  margin-left: 200px;
+  font-size: large;
+}
+
+
+.todo-img{
+  height: 100px;
+  width: 200px;
+  /* margin-left: 1rem; */
+
+}
 .input-container {
   height: 400px;
   width: 100%;
   border-radius: 10px;
-  /* margin-left: 80px;s */
   border-radius: 10px;
-  background-color: #C8A4D4;
+  /* background-color: #C8A4D4; */
+  background-color: rgb(237, 84, 181);
+  /* background: linear-gradient(#0D1E4C , #C48CB3, #E5C9D7, #83A6CE,#26415E,#0B1B32); */
   margin-top: 20px;
-  /* box-shadow: 0 0 20px grey; */
+
 }
-.input-container:hover {
-  box-shadow: 0px 0px 100px #C8A4D4;
-}
+
 
 .input {
   background-color: whitesmoke;
   height: 20px;
-  width: 80%;
+  width: 70%;
   margin-top: 20px;
   margin-left: 20px;
   padding: 12px;
@@ -48,12 +61,10 @@
   color: black;
   outline: none;
   border: none;
+  box-shadow: 0 0 20px grey;
 }
 
-.input:hover {
-  transition: all;
-  box-shadow: 0px 0px 100px #643B9F;
-}
+
 
 .button {
   height: 40px;
@@ -74,30 +85,29 @@
   cursor: pointer;
   box-shadow: 0px 0px 100px #643B9F;
 }
-.tickImg {
-  height: 30px;
-  width: 50px;
-}
 
 .list-bar {
-  height: 50px;
-  width: 90%;
+  height: 30px;
+  width: 80%;
   background-color: #e4d1d1;
   border-radius: 5px;
   font-weight: bold;
   font-size: 20px;
   box-shadow: 0 0 20px grey;
-  text-rendering: auto;
   margin-top: 10px;
+ 
 }
 
 
-.del-btn {
-  margin-left: 50px;
-  /* background-color: red; */
-  border: none;
-  /* position: relative; */
-  /* color: red; */
+.fa{
+  margin-left: 250px;
+  position: sticky;
+}
+
+.fa:hover {
+color: red;
+cursor: pointer;
+
 }
 
 .clear-btn{

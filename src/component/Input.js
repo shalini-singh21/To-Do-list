@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import tick from "../images/tick.png"
+// import tick from "../images/tick.png"
+import todo from "../images/todo.png"
 
 function Input() {
     const [tasks, setTasks] = useState([]); // that is an array that holds all task added the list
@@ -11,23 +12,20 @@ function Input() {
     }
     const handleOnAdd = () => {
 
-        if (input.trim()) { //trim function is used to remove the extra space at the end and start of the strings
+        if (input.trim()) {
             setTasks([...tasks, input]);
-            setInput(""); //clear the input after adding the task 
+            setInput("");
         } else {
-            alert('please add a task'); //if input feild is empty it will show this alert message to user
+            alert('please add a task');
         }
     }
     const handleOnDel = (key) => {
         console.log("delete btn has been clicked")
         let newTasks = [...tasks];
-        newTasks.splice(key,1)
+        newTasks.splice(key, 1)
         setTasks([...newTasks])
     }
-    const handleOnClear=((event) => {
-        setInput("");
-        event.currentTarget.disabled = true;
-    })
+
 
     useEffect(() => {
         const storedTasks = JSON.parse(localStorage.getItem('tasks'))
@@ -37,37 +35,30 @@ function Input() {
     }, [])
 
     useEffect(() => {
-        //local storage only support to string the strings as keys and value therefore we cannot strore the arrays and
-        //  objects  without converting the arrays and objects into strings first,  so  here json.stringify is use to 
-        // convert the objects int0 a json string .
         localStorage.setItem('tasks', JSON.stringify(tasks));
+        console.warn("tasks added");
     }, [tasks]);
     return (
         <>
             <div className="App">
-                <header className="header"> <h1> TO-DO-LIST  <img src={tick} className="tickImg" /></h1></header>
-                <hr></hr>
-                <h2  className="header"> Get Your Things Done</h2>
-                {/* <hr></hr> */}
+                <header className="header">   <img src={todo} className="todo-img" />
+                
+                </header>
+               
+                <h2 className="header1"> Get Your Things Done!!</h2>
+
                 <div className="input-container">
                     <input className="input" type="text" value={input} onChange={handleonchange} placeholder="add item..." />
                     <button className="button btn-primary" onClick={handleOnAdd}>   Add + </button>
-                    {/* <button className="clear-btn btn-info" onClick={handleOnClear} disabled={!input}> Clear </button> */}
+
                     <hr></hr>
 
                     <ol>
-                   
                         {tasks.map((tasks, index) => (// index is the positions of the items 
-                        
-                            <li key={index}  className="list-bar">
-                                {tasks}
-                              
 
-                                <button className="del-btn" onClick={handleOnDel}>
-                                    <i className="fa-solid fa-trash-can"></i>
-                                </button>
-                                
-                               
+                            <li key={index} className="list-bar">
+                                {tasks}
+                                <i onClick={handleOnDel} className="fa fa-trash-can"></i>
                             </li>
                         ))}
                     </ol>

@@ -1,9 +1,9 @@
- import  React ,{ useContext } from "react"; //jo constext comp  me bnaya tha 
-import { userContext } from "./ComponentA";
+ import  React , { useContext } from "react"; //jo constext comp  me bnaya tha 
+import { shaliniContext } from "./ComponentA";
 
 function ComponentD() {
    
-    const user= userContext(useContext);
+    const user= useContext(shaliniContext);
     return (
         <> <div className="compD">
             <h1> component D</h1>
