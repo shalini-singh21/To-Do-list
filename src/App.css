@@ -3,12 +3,9 @@
   width: 50%;
   padding: 20px;
   border-radius: 10px;
-  margin-left: 200px;
-  margin-right: 300px;
-  margin-top: 50px;
-  margin-bottom: 100px;
+ 
   /* background-image: url("C:\Users\shalini singh\to-do-list\src\images\list.png"); */
-  background-position: center;
+ 
   background-size: cover;
   background-color:  #AC94F4;
   /* background: linear-gradient(#181A2F, #242E49, #37415C, #FDA481,#B4182D,#53162B); */
