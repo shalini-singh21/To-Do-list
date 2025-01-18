@@ -9,17 +9,9 @@
 
 }
 
-.header {
-  font-style:italic;
-  margin-left: 200px;
-  font-size: large;
-  text-shadow:red;
-
-}
 
 .header1{
   font-style: italic;
-  /* margin-left: 400px; */
   font-size: large;
 }
 
@@ -27,8 +19,10 @@
 .todo-img{
   height: 100px;
   width: 200px;
+  font-style:italic;
   /* margin-left: 200px; */
-  /* margin-left: 1rem; */
+  font-size: large;
+  text-shadow:red;
 
 }
 .input-container {
@@ -132,4 +126,26 @@ cursor: pointer;
 .nodata{
   color: red;
   margin-top: -5px;
+}
+
+@media screen  and (max-width:600px){
+  .App {
+    height: 800px;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+  
+    background-size: cover;
+    background-color:  #AC94F4;
+  
+  }
+
+  .todo-img{
+    height: 100px;
+    width: 200px;
+    font-style:italic;
+    /* margin-left: 200px; */
+   
+  
+  }
 }
