@@ -1,20 +1,22 @@
 
 import './App.css';
-import Input from './component/Input';
+import Comment from './component/Comment';
+import { useEffect } from 'react';
 import React from 'react';
-// import ComponentA from './ComponentA';
-// import Commentlist from './component/Comment';
-// import Comment from './component/Comment';
-
+import {getPosts} from "./component/api";
 function App() {
+useEffect(()=>{
+  getPosts().then((posts)=>console.log(posts));
+} ,[]);
 
-  
   return (
     <>
-      <Input />
-
-      {/* <ComponentA /> */}
-    
+   
+     <Comment />
+  
+     
+   
+     
     </>
   )
 }
