@@ -41,7 +41,7 @@ function Input() {
     return (
         <>
             <div className="App">
-                <header className="header">   <img src={todo} className="todo-img" />
+                <header className="header"><img src={todo} className="todo-img" />
                 
                 </header>
                

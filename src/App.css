@@ -1,5 +1,5 @@
 .App {
-  height: 1000px;
+  height: 100%;
   width: 100%;
   padding: 20px;
   border-radius: 10px;
@@ -131,7 +131,7 @@ cursor: pointer;
 @media screen  and (max-width:600px){
   .App {
     height: 800px;
-    width: 50%;
+    width: 80%;
     padding: 20px;
     border-radius: 10px;
   
@@ -144,8 +144,14 @@ cursor: pointer;
     height: 100px;
     width: 200px;
     font-style:italic;
-    /* margin-left: 200px; */
+    margin-left: 100px;
    
   
   }
+  .header1{
+    font-style: italic;
+    font-size: large;
+  margin-left: 6rem;
+  }
+
 }
