@@ -130,8 +130,8 @@ cursor: pointer;
 
 @media screen  and (max-width:600px){
   .App {
-    height: 800px;
-    width: 80%;
+    height: 700px;
+    width: 90%;
     padding: 20px;
     border-radius: 10px;
   
