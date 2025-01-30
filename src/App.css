@@ -3,7 +3,6 @@
   width: 100%;
   padding: 20px;
   border-radius: 10px;
-
   background-size: cover;
   background-color:  #AC94F4;
 
@@ -120,12 +119,13 @@ cursor: pointer;
 .inputform{
   font-weight: 500;
 }
-.data{
+.pdata{
   color: black;
 }
 .nodata{
   color: red;
   margin-top: -5px;
+  font-size: 10px;
 }
 
 @media screen  and (max-width:600px){
@@ -153,5 +153,28 @@ cursor: pointer;
     font-size: large;
   margin-left: 6rem;
   }
+
+}
+
+
+.form{
+  background-color: pink;
+  padding: 10rem;
+ 
+}
+
+.btn{
+ padding: 10px;
+ border-radius: 10px;
+ color: white;
+  background-color: red;
+}
+
+.label{
+  font-size: large;
+  font-weight: bold;
+}
+.inputform{
+  border: 3px solid;
 
 }

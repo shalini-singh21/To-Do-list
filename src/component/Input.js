@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 // import tick from "../images/tick.png"
 import todo from "../images/todo.png"
+import { Button } from "@mui/material";
 
 function Input() {
     const [tasks, setTasks] = useState([]); // that is an array that holds all task added the list
@@ -41,7 +42,7 @@ function Input() {
     return (
         <>
             <div className="App">
-                <header className="header"><img src={todo} className="todo-img" />
+                <header className="header"><img src={todo}  alt={""}className="todo-img" />
                 
                 </header>
                
@@ -49,7 +50,8 @@ function Input() {
 
                 <div className="input-container">
                     <input className="input" type="text" value={input} onChange={handleonchange} placeholder="add item..." />
-                    <button className="button btn-primary" onClick={handleOnAdd}>   Add + </button>
+                    <button variant="contained" color="primary"
+                    size="large" onClick={handleOnAdd}>   Add + </button>
 
                     <hr></hr>
 
