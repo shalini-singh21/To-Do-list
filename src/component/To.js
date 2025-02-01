@@ -48,10 +48,10 @@ function To() {
                 <h2 className="header1"> Get Your Things Done!!</h2>
 
                 <div className="input-container">
-                    <Input className="input" type="text" placeholder="add item..." onClick={handleonchange}  />
-    
-                    <Button variant="contained" onClick={handleOnAdd} > Add + </Button>
-                
+                    <Input className="input" type="text" value={input} onChange={handleonchange} placeholder="add item..."/>
+
+                    <Button variant="contained" onClick={handleOnAdd} color="primary"> let's start</Button>
+               
 
                     <hr></hr>
 
