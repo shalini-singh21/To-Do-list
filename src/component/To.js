@@ -50,7 +50,7 @@ function To() {
                 <div className="input-container">
                     <Input className="input" type="text" value={input} onChange={handleonchange} placeholder="add item..."/>
 
-                    <Button variant="contained" onClick={handleOnAdd} color="primary"> let's start</Button>
+                    <Button className="button" variant="contained" onClick={handleOnAdd} color="primary"> add +</Button>
                
 
                     <hr></hr>
