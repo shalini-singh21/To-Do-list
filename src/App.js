@@ -1,11 +1,12 @@
 
 import './App.css';
 import React from 'react';
-import Input from"./component/Input"
+
+import To from './component/To';
 function App() {
   return (
     <>
-    <Input/>
+    <To/>
     </>
   )
 }

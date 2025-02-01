@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-
+import { Button, Input } from "@mui/material";
 // import tick from "../images/tick.png"
 import todo from "../images/todo.png"
-import { Button } from "@mui/material";
 
-function Input() {
+function To() {
     const [tasks, setTasks] = useState([]); // that is an array that holds all task added the list
     const [input, setInput] = useState(''); //that holds the current input from the user
     const handleonchange = (event) => {
@@ -42,16 +41,17 @@ function Input() {
     return (
         <>
             <div className="App">
-                <header className="header"><img src={todo}  alt={""}className="todo-img" />
-                
+                <header className="header"><img src={todo} alt={""} className="todo-img" />
+
                 </header>
-               
+
                 <h2 className="header1"> Get Your Things Done!!</h2>
 
                 <div className="input-container">
-                    <input className="input" type="text" value={input} onChange={handleonchange} placeholder="add item..." />
-                    <button variant="contained" color="primary"
-                    size="large" onClick={handleOnAdd}>   Add + </button>
+                    <Input className="input" type="text" placeholder="type your name" onClick={handleonchange}  value={input}/>
+    
+                    <Button variant="contained" onClick={handleOnAdd} > Add + </Button>
+                
 
                     <hr></hr>
 
@@ -70,4 +70,4 @@ function Input() {
     )
 }
 
-export default Input;
+export default To;
