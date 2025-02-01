@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Input } from "@mui/material";
+import {  Input } from "@mui/material";
 // import tick from "../images/tick.png"
 import todo from "../images/todo.png"
 
@@ -49,9 +49,9 @@ function To() {
 
                 <div className="input-container">
                     <Input className="input" type="text" value={input} onChange={handleonchange} placeholder="add item..."/>
-
-                    <Button className="button" variant="contained" onClick={handleOnAdd} color="primary"> add +</Button>
-               
+                    {/* <input className="input" type="text" value={input} onChange={handleonchange} placeholder="add item..." /> */}
+             
+                    <button className="button btn-primary" onClick={handleOnAdd}>   Add + </button>
 
                     <hr></hr>
 
